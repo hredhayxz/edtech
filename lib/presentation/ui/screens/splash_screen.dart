@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future<void> goToNextScreen() async {
     Future.delayed(const Duration(seconds: 2)).then((value) {
-      Get.offAll(() => const DashboardScreen());
+      Get.offAll(() => DashboardScreen());
     });
   }
 
