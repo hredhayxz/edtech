@@ -13,6 +13,11 @@ class EdTech extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+          inputDecorationTheme: const InputDecorationTheme(
+            contentPadding: EdgeInsets.symmetric(horizontal: 16),
+            border:
+            OutlineInputBorder(borderSide: BorderSide(color: Colors.grey)),
+          )
       ),
       home: const SplashScreen(),
     );
