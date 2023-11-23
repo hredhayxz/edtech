@@ -1,5 +1,7 @@
+import 'package:edtech/presentation/ui/screens/course_player_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 class EnrolledCourseCard extends StatelessWidget {
   const EnrolledCourseCard({
@@ -46,14 +48,19 @@ class EnrolledCourseCard extends StatelessWidget {
                   width: screenSize.width,
                   height: 40,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(() => CoursePlayerScreen(courseTitle));
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.greenAccent,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
-                    child: const Text('Continue Course',style: TextStyle(color: Colors.black),),
+                    child: const Text(
+                      'Continue Course',
+                      style: TextStyle(color: Colors.black),
+                    ),
                   ),
                 ),
               ],

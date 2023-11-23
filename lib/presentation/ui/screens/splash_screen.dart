@@ -1,4 +1,5 @@
 import 'package:edtech/presentation/ui/screens/auth/login_screen.dart';
+import 'package:edtech/presentation/ui/screens/dashboard_screen.dart';
 import 'package:edtech/presentation/ui/utility/assets_path.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -20,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future<void> goToNextScreen() async {
     Future.delayed(const Duration(seconds: 2)).then((value) {
-      Get.offAll(() => const LoginScreen());
+      Get.offAll(() =>  DashboardScreen());
     });
   }
 

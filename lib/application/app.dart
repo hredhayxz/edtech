@@ -1,3 +1,4 @@
+import 'package:edtech/application/state_holder_binder.dart';
 import 'package:edtech/presentation/ui/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,6 +21,7 @@ class EdTech extends StatelessWidget {
           )
       ),
       home: const SplashScreen(),
+      initialBinding: StateHolderBinder(),
     );
   }
 }
